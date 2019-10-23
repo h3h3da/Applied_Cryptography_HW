@@ -8,8 +8,14 @@
 
 ## 效果
 
+校徽原图:
+
 ![校徽原图](./pku_logo.png)
 
+使用SM4/ECB加密后:
+
 ![使用SM4/ECB加密后](./sm4ecb.png)
+
+使用SM4/CBC加密后：
 
 ![使用SM4/CBC加密后](./sm4cbc.png)

@@ -10,7 +10,7 @@
 
 ## 第二次作业
 
-[Encrypt a PKU logo with SM4/ECB and other modes](https://github.com/h3h3da/Applied_Cryptography_HW/tree/master/sm4encry)
+[Proof & Encrypt](https://github.com/h3h3da/Applied_Cryptography_HW/tree/master/sm4encry)
 
 ## 待更新...
 

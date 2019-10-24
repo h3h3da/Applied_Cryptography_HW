@@ -13,7 +13,6 @@ def sm4ecb(outfile):
     crypt_sm4.set_key(key, SM4_ENCRYPT)
     with open("./pku_logo.rgb", 'rb') as f:
         logo_data = f.read()
-        print(type(logo_data))
         encrypt_logo = crypt_sm4.crypt_ecb(logo_data)
         f.close()
     with open(outfile, 'wb') as f:
@@ -25,7 +24,6 @@ def sm4cbc(outfile):
     crypt_sm4.set_key(key, SM4_ENCRYPT)
     with open("./pku_logo.rgb", 'rb') as f:
         logo_data = f.read()
-        print(type(logo_data))
         encrypt_logo = crypt_sm4.crypt_cbc(iv, logo_data)
         f.close()
     with open(outfile, 'wb') as f:

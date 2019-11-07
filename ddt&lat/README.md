@@ -10,14 +10,23 @@
 
 ![SBox-1的差分分析表](./ddt1.png) 
 
+### DDT具体信息：
 
 [SBox-0的差分分析表](./DDTS0.md)
 
 [SBox-1的差分分析表](./DDTS1.md)
 
-
-
 ### ZUC SBox-0&1 的线性分析表
+
+![SBox-0的线性分析表](./lat0.png)
+
+![SBox-1的线性分析表](./lat1.png
+
+### DDT具体信息：
+
+[SBox-0的差分分析表](./LATS0.md)
+
+[SBox-1的差分分析表](./LATS1.md)
 
 ## 2、Answer why a final key mixing is required by a cipher?
 

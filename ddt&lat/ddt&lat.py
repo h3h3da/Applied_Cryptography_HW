@@ -39,7 +39,6 @@ Sboxes = [
     ]
 ]
 
-
 def createEmptyList(size):
     return [0] * size
 
@@ -130,35 +129,23 @@ def printLAT(LAT):
             tb.add_row(temlist)
             temlist=[]
         i += 1
-
-    # print(temlist)
-    # print(line)
     print(tb)
-
-def mask(x, a):
-    binX = bin(x)[2:]
-    binA = bin(a)[2:]
-
-    if len(binX) < 4:
-        binX = "0" * (4 - len(binX)) + binX
-
-    if len(binA) < 4:
-        binA = "0" * (4 - len(binA)) + binA
-
-    r = int(binX[0]) & int(binA[0])
-    for j in range(1, 4):
-        r ^= int(binX[j]) & int(binA[j])
-    return r
 
 def LATofSBOX( sBox ):
     lat = []
-    for i in range(0,256):
-        for j in range(0,256):
+    for i in range(0, 256):
+        for j in range(0, 256):
             r = 0
-            for x in range(0,2):
-                sx = int(str(sBox[x]),16)
-                r += (mask(i,x) ^ mask(j,sx))
-            r = r - 8
+            for x in range(0, 256):
+                input_masked = x & i
+                output_masked = int(str(sBox[x]), 16) & j
+                if (bin(input_masked).count("1") - bin(output_masked).count("1")) % 2 == 0:
+                    r += 1
+            r = r - 128
+            if r > 0:
+                r = "+" + str(r)
+            else:
+                r = str(r)
             lat.append(r)
     printLAT(lat)
 

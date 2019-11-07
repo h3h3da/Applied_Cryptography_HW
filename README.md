@@ -12,6 +12,10 @@
 
 [Proof & Encrypt](https://github.com/h3h3da/Applied_Cryptography_HW/tree/master/sm4encry)
 
+## 第三次作业
+
+[ZUC'S DDT&LAT](https://github.com/h3h3da/Applied_Cryptography_HW/tree/master/ddt&lat)
+
 ## 待更新...
 
 

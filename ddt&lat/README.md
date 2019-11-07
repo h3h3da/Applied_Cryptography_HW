@@ -20,7 +20,7 @@
 
 ![SBox-0的线性分析表](./lat0.png)
 
-![SBox-1的线性分析表](./lat1.png
+![SBox-1的线性分析表](./lat1.png)
 
 ### DDT具体信息：
 

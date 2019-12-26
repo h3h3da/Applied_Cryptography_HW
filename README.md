@@ -16,6 +16,10 @@
 
 [ZUC'S DDT&LAT](https://github.com/h3h3da/Applied_Cryptography_HW/tree/master/ddt&lat)
 
+## 报告
+
+[IoT设备中的分组密码研究——以Chaskey、Simon和Speck为例](https://github.com/h3h3da/Applied_Cryptography_HW/tree/master/blockciphers)
+
 ## 待更新...
 
 
